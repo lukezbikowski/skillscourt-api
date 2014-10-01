@@ -1,12 +1,13 @@
 require "rails_helper"
 
-RSpec.describe StudentsController do
+RSpec.describe Api::V1::StudentsController do
 
   describe "GET students" do
       
     before(:each) do
       create :student, name: "John", email: "john@example.com"
       create :student, name: "Mary", email: "mary@example.com"
+      request.host = "api.skillscourt.com"
       get :index, :format => :json
     end
   
