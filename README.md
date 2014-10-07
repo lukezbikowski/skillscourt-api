@@ -13,30 +13,12 @@ This application requires:
 Getting Started
 ---------------
 
-1. Setup git:
-https://help.github.com/articles/set-up-git
-
+1. Read our 'how to start guide':
+http://skillscourt.github.io/how-to-start/
 
 2. Review ruby styleguide:
 https://github.com/styleguide/ruby
 
-
-
-
-Documentation and Support
--------------------------
-
-Issues
--------------
-
-Similar Projects
-----------------
-
-Contributing
-------------
-
-Credits
--------
 
 License
 -------
