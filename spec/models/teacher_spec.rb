@@ -25,4 +25,8 @@ RSpec.describe Teacher, :type => :model do
        expect(teacher).to be_invalid
     end
   end
+
+  describe "association" do
+    it { should belong_to(:user) }
+  end
 end
