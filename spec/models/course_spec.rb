@@ -15,6 +15,12 @@ RSpec.describe Course, :type => :model do
       expect(Course.create!(@attributes)).to be_valid
     end
 
+    it "should fail to create a course when name is not given" do
+       course = Course.create
+
+       expect(course).to be_invalid
+    end
+
     it "should fail to create a course with a duplicate name" do
       Course.create @attributes
       course = Course.create @attributes
