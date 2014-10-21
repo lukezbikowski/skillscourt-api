@@ -22,4 +22,8 @@ RSpec.describe Course, :type => :model do
       expect(course).to be_invalid
     end
   end
+  
+  describe "association" do
+    it { should belong_to(:teacher) }
+  end
 end
