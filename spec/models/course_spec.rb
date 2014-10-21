@@ -25,5 +25,12 @@ RSpec.describe Course, :type => :model do
   
   describe "association" do
     it { should belong_to(:teacher) }
+    
+    it "teacher id should be present" do
+      teacher = create(:teacher)
+      course = teacher.courses.create! attributes_for(:course)
+      course.teacher_id = nil
+      expect(course).to be_invalid
+    end
   end
 end
